@@ -7,7 +7,6 @@ use this commands tu setup the bridge:
 cd ~/Downloads
 curl -O https://raw.githubusercontent.com/systemswap/bridgeKVM/main/setup-linuxMainBridge.sh
 chmod +x setup-linuxMainBridge.sh
-
 ./setup-linuxMainBridge.sh
 
 
