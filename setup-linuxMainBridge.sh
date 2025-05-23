@@ -47,3 +47,5 @@ sudo nmcli connection modify mainBridge-slave connection.autoconnect yes
 
 echo "✅ Bridge 'mainBridge' wurde eingerichtet und ersetzt '$PHYS_IF'."
 
+# grafischen Netzwerk-Editor zur Überprüfung
+nm-connection-editor &
