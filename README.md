@@ -2,11 +2,12 @@
 add a bridge to a linux host to use it in virtual magines
 
 
-how to use:
+use this commands tu setup the bridge:
 
 cd ~/Downloads
 curl -O https://raw.githubusercontent.com/systemswap/bridgeKVM/main/setup-linuxMainBridge.sh
 chmod +x setup-linuxMainBridge.sh
+
 ./setup-linuxMainBridge.sh
 
 
