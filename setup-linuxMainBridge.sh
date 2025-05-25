@@ -18,7 +18,7 @@ if [[ "$MODE" == "1" ]]; then
     fi
 
     # Show list
-    echo -e "\n📡 Available Ethernet interfaces:"
+    echo -e "\n📡 Which Ethernet interface should be used as bridge slave?"
     for i in "${!ETH_DEVICES[@]}"; do
         DEVICE=$(cut -d: -f1 <<< "${ETH_DEVICES[$i]}")
         STATE=$(cut -d: -f2 <<< "${ETH_DEVICES[$i]}")
