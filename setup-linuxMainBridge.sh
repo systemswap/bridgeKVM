@@ -67,5 +67,6 @@ else
     exit 1
 fi
 
-# 🖥️ Open the NetworkManager GUI editor
+# 🖥️ Öffne die grafische Netzwerkverwaltung
+echo -e "\n🖥️ Starte NetworkManager GUI..."
 nm-connection-editor &
