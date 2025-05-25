@@ -56,6 +56,10 @@ if [[ "$MODE" == "1" ]]; then
     echo "➕ Creating bridge '$BRIDGE_NAME'"
     sudo nmcli connection add type bridge ifname "$BRIDGE_NAME" con-name "$BRIDGE_NAME"
 
+    # Set bridge to use DHCP
+    sudo nmcli connection modify "$BRIDGE_NAME" ipv4.method auto
+    sudo nmcli connection modify "$BRIDGE_NAME" ipv6.method ignore
+
     # Add physical interface as bridge slave
     echo "➕ Adding '$PHYS_IF' as bridge slave"
     sudo nmcli connection add type ethernet ifname "$PHYS_IF" master "$BRIDGE_NAME" con-name "$SLAVE_NAME"
