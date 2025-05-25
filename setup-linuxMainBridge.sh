@@ -66,3 +66,6 @@ else
     echo "❌ Ungültige Eingabe. Abbruch."
     exit 1
 fi
+
+# 🖥️ Open the NetworkManager GUI editor
+nm-connection-editor &
